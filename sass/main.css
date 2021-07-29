@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 25vh;
+  padding: 0 30px;
+}
+
+.header__logo img {
+  height: 100px;
+  width: 100%;
+  left: 0px;
+}
+
+.header__nav li {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #303030;
+  font-size: 16px;
+  font-family: sans-serif;
+  padding: 0 10px;
+}
+
+.header__nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #303030;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.button {
+  background-color: #000;
+  border: none;
+  color: #fff !important;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.splide {
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.splide__slide img {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*# sourceMappingURL=main.css.map */

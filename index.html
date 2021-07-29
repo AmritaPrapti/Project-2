@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./sass/main.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/themes/splide-skyblue.min.css">
+</head>
+<body>
+    <header class="header">
+        
+            <div class="header__logo">
+             <img src="./image/H E R.png" alt="">
+            </div>
+            <div class="header__nav">
+                <ul>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">Specials</a></li>
+                    <li><a href="">location</a></li>
+                    <li><a href="">book online</a></li>
+                    <li><a href="">contact</a></li>
+                    <li><a href="" class="button btn-primary">gift card</a></li>
+                </ul>
+            
+         </div>   
+    </header>
+
+    <div class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide"><img src="./image/0.jpg" alt=""></li>
+                <li class="splide__slide"><img src="./image/1.jpg" alt=""></li>
+                <li class="splide__slide"><img src="./image/2.jpg" alt=""></li>
+                <li class="splide__slide"><img src="./image/3.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+    <script>
+        new Splide( '.splide', {
+	    type  : 'fade',
+	    rewind: true,
+        } ).mount();
+    </script>
+
+
+</body>
+</html>
