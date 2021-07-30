@@ -10,6 +10,19 @@ $color-secondary-text:#818181;
     font-size: 16px;
     font-family: sans-serif;
 }
+%btn-placeholder{
+    
+    
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
 
 * { 
     margin: 0;
@@ -41,29 +54,62 @@ $color-secondary-text:#818181;
         @include style-text;  
     }
 }
-.button{
+.btn-primary{
     background-color: $color-seconday;
-    border: none;
     color: $color-primary !important;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+    @extend %btn-placeholder;
+    border:none;
+    
+}
+.btn-secondary{
+    background-color:transparent;
+    color: $color-primary;
+    @extend %btn-placeholder;
+    border: 2px solid #000000;
+    
 }
 .splide{
     width: 100%;
     height: 700px;
     overflow: hidden;
     margin: 0 auto;
+    position: relative;
+
+    &__list{
+        position: relative;
+    }
+
+    &__slide h2 {
+        position: absolute;
+        z-index: 200;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 2.2rem;
+        color: $color-primary;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        
+    }
+    &__button{
+        position: absolute;
+        z-index: 200;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: inline-block;
+    }
     
     &__slide img{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+   
     }
+    
+
 }
